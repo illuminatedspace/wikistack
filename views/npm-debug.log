@@ -1,0 +1,215 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'sequelize',
+1 verbose cli   'pg',
+1 verbose cli   'gp-hstore',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData sequelize
+8 silly fetchPackageMetaData pg
+9 silly fetchPackageMetaData gp-hstore
+10 silly fetchNamedPackageData sequelize
+11 silly mapToRegistry name sequelize
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: 'sequelize',
+14 silly mapToRegistry   scope: null,
+14 silly mapToRegistry   escapedName: 'sequelize',
+14 silly mapToRegistry   name: 'sequelize',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri https://registry.npmjs.org/sequelize
+16 silly fetchNamedPackageData pg
+17 silly mapToRegistry name pg
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry data Result {
+20 silly mapToRegistry   raw: 'pg',
+20 silly mapToRegistry   scope: null,
+20 silly mapToRegistry   escapedName: 'pg',
+20 silly mapToRegistry   name: 'pg',
+20 silly mapToRegistry   rawSpec: '',
+20 silly mapToRegistry   spec: 'latest',
+20 silly mapToRegistry   type: 'tag' }
+21 silly mapToRegistry uri https://registry.npmjs.org/pg
+22 silly fetchNamedPackageData gp-hstore
+23 silly mapToRegistry name gp-hstore
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'gp-hstore',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'gp-hstore',
+26 silly mapToRegistry   name: 'gp-hstore',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/gp-hstore
+28 verbose request uri https://registry.npmjs.org/sequelize
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 5:57:43 PM
+31 verbose request id 84a64081f3ea1a1c
+32 http request GET https://registry.npmjs.org/sequelize
+33 verbose request uri https://registry.npmjs.org/gp-hstore
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 5:57:43 PM
+36 http request GET https://registry.npmjs.org/gp-hstore
+37 verbose request uri https://registry.npmjs.org/pg
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 5:57:43 PM
+40 verbose etag W/"5863f910-2b16d"
+41 verbose lastModified Wed, 28 Dec 2016 17:40:32 GMT
+42 http request GET https://registry.npmjs.org/pg
+43 http 200 https://registry.npmjs.org/sequelize
+44 verbose headers { server: 'nginx/1.10.1',
+44 verbose headers   'content-type': 'application/json',
+44 verbose headers   'last-modified': 'Fri, 06 Jan 2017 14:04:45 GMT',
+44 verbose headers   etag: 'W/"586fa3fd-79cda"',
+44 verbose headers   'content-encoding': 'gzip',
+44 verbose headers   'cache-control': 'max-age=300',
+44 verbose headers   'content-length': '25331',
+44 verbose headers   'accept-ranges': 'bytes',
+44 verbose headers   date: 'Fri, 20 Jan 2017 22:57:43 GMT',
+44 verbose headers   via: '1.1 varnish',
+44 verbose headers   age: '283',
+44 verbose headers   connection: 'keep-alive',
+44 verbose headers   'x-served-by': 'cache-jfk8128-JFK',
+44 verbose headers   'x-cache': 'HIT',
+44 verbose headers   'x-cache-hits': '1',
+44 verbose headers   'x-timer': 'S1484953063.519580,VS0,VE0',
+44 verbose headers   vary: 'Accept-Encoding' }
+45 silly get cb [ 200,
+45 silly get   { server: 'nginx/1.10.1',
+45 silly get     'content-type': 'application/json',
+45 silly get     'last-modified': 'Fri, 06 Jan 2017 14:04:45 GMT',
+45 silly get     etag: 'W/"586fa3fd-79cda"',
+45 silly get     'content-encoding': 'gzip',
+45 silly get     'cache-control': 'max-age=300',
+45 silly get     'content-length': '25331',
+45 silly get     'accept-ranges': 'bytes',
+45 silly get     date: 'Fri, 20 Jan 2017 22:57:43 GMT',
+45 silly get     via: '1.1 varnish',
+45 silly get     age: '283',
+45 silly get     connection: 'keep-alive',
+45 silly get     'x-served-by': 'cache-jfk8128-JFK',
+45 silly get     'x-cache': 'HIT',
+45 silly get     'x-cache-hits': '1',
+45 silly get     'x-timer': 'S1484953063.519580,VS0,VE0',
+45 silly get     vary: 'Accept-Encoding' } ]
+46 verbose get saving sequelize to /Users/elliott/.npm/registry.npmjs.org/sequelize/.cache.json
+47 verbose correctMkdir /Users/elliott/.npm correctMkdir not in flight; initializing
+48 http 404 https://registry.npmjs.org/gp-hstore
+49 verbose headers { 'content-type': 'application/json',
+49 verbose headers   'cache-control': 'max-age=0',
+49 verbose headers   'content-length': '2',
+49 verbose headers   'accept-ranges': 'bytes',
+49 verbose headers   date: 'Fri, 20 Jan 2017 22:57:43 GMT',
+49 verbose headers   via: '1.1 varnish',
+49 verbose headers   age: '0',
+49 verbose headers   connection: 'keep-alive',
+49 verbose headers   'x-served-by': 'cache-jfk8148-JFK',
+49 verbose headers   'x-cache': 'MISS',
+49 verbose headers   'x-cache-hits': '0',
+49 verbose headers   'x-timer': 'S1484953063.520642,VS0,VE30',
+49 verbose headers   vary: 'Accept-Encoding' }
+50 silly get cb [ 404,
+50 silly get   { 'content-type': 'application/json',
+50 silly get     'cache-control': 'max-age=0',
+50 silly get     'content-length': '2',
+50 silly get     'accept-ranges': 'bytes',
+50 silly get     date: 'Fri, 20 Jan 2017 22:57:43 GMT',
+50 silly get     via: '1.1 varnish',
+50 silly get     age: '0',
+50 silly get     connection: 'keep-alive',
+50 silly get     'x-served-by': 'cache-jfk8148-JFK',
+50 silly get     'x-cache': 'MISS',
+50 silly get     'x-cache-hits': '0',
+50 silly get     'x-timer': 'S1484953063.520642,VS0,VE30',
+50 silly get     vary: 'Accept-Encoding' } ]
+51 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/gp-hstore
+51 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+51 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+51 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+51 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+51 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+51 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+51 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+51 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+51 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+51 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+51 silly fetchPackageMetaData  error for gp-hstore { Error: Registry returned 404 for GET on https://registry.npmjs.org/gp-hstore
+51 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+51 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+51 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+51 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+51 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+51 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+51 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+51 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+51 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+51 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12) pkgid: 'gp-hstore', statusCode: 404, code: 'E404' }
+52 http 304 https://registry.npmjs.org/pg
+53 verbose headers { date: 'Fri, 20 Jan 2017 22:57:43 GMT',
+53 verbose headers   via: '1.1 varnish',
+53 verbose headers   'cache-control': 'max-age=300',
+53 verbose headers   etag: 'W/"5863f910-2b16d"',
+53 verbose headers   age: '0',
+53 verbose headers   connection: 'keep-alive',
+53 verbose headers   'x-served-by': 'cache-jfk8123-JFK',
+53 verbose headers   'x-cache': 'HIT',
+53 verbose headers   'x-cache-hits': '1',
+53 verbose headers   'x-timer': 'S1484953063.552590,VS0,VE69',
+53 verbose headers   vary: 'Accept-Encoding' }
+54 silly get cb [ 304,
+54 silly get   { date: 'Fri, 20 Jan 2017 22:57:43 GMT',
+54 silly get     via: '1.1 varnish',
+54 silly get     'cache-control': 'max-age=300',
+54 silly get     etag: 'W/"5863f910-2b16d"',
+54 silly get     age: '0',
+54 silly get     connection: 'keep-alive',
+54 silly get     'x-served-by': 'cache-jfk8123-JFK',
+54 silly get     'x-cache': 'HIT',
+54 silly get     'x-cache-hits': '1',
+54 silly get     'x-timer': 'S1484953063.552590,VS0,VE69',
+54 silly get     vary: 'Accept-Encoding' } ]
+55 verbose etag https://registry.npmjs.org/pg from cache
+56 verbose get saving pg to /Users/elliott/.npm/registry.npmjs.org/pg/.cache.json
+57 verbose correctMkdir /Users/elliott/.npm correctMkdir not in flight; initializing
+58 silly rollbackFailedOptional Starting
+59 silly rollbackFailedOptional Finishing
+60 silly runTopLevelLifecycles Finishing
+61 silly install printInstalled
+62 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/gp-hstore
+62 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+62 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+62 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+62 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+62 verbose stack     at emitTwo (events.js:106:13)
+62 verbose stack     at Request.emit (events.js:191:7)
+62 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+62 verbose stack     at emitOne (events.js:96:13)
+62 verbose stack     at Request.emit (events.js:188:7)
+62 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+63 verbose statusCode 404
+64 verbose pkgid gp-hstore
+65 verbose cwd /Users/elliott/Google Drive/grace_hopper/wikistack/views
+66 error Darwin 16.0.0
+67 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "sequelize" "pg" "gp-hstore" "--save"
+68 error node v6.9.1
+69 error npm  v3.10.8
+70 error code E404
+71 error 404 Registry returned 404 for GET on https://registry.npmjs.org/gp-hstore
+72 error 404
+73 error 404 'gp-hstore' is not in the npm registry.
+74 error 404 You should bug the author to publish it (or use the name yourself!)
+75 error 404 Note that you can also install from a
+76 error 404 tarball, folder, http url, or git url.
+77 verbose exit [ 1, true ]
