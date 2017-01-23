@@ -5,19 +5,37 @@ const nunjucks = require('nunjucks');
 const bodyParser = require('body-parser');
 const models = require('./models');
 const path = require('path');
+const router = require('./routes/wiki.js');
 
-
-//const server = app.listen(1337, () => console.log('listening on Port 1337'));
 
 app.use(express.static(path.join(__dirname, '/public')));
 
+app.use(morgan('dev'));
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+
 models.User.sync({})
 	.then(function() {
-		return models.Page.sync({})
+		return models.Page.sync({});
 	})
+  .then(function() {
+    models.Page.sync({});
+  })
+  .then(function() {
+    return models.Page.sync({});
+  })
 	.then(function() {
-		server.listen(3000, function() {
-			console.log('Server is listening on port 3001!');
+		app.listen(3000, function() {
+			console.log('Server is listening on port 3000!');
 		});
-	})
+  })
 	.catch(console.error);
+
+
+nunjucks.configure('views', {noCache: true});
+
+app.set('view engine', 'html');
+app.engine('html', nunjucks.render);
+
+app.use('/wiki/', router);
