@@ -29,24 +29,17 @@ var Page = db.define('page', {
 	}
 },
 {
-	getterMethods: { 
+	getterMethods: {
 		route: function() {
 			var urlTitle = this.getDataValue('urlTitle');
 			return '/wiki/' + urlTitle;
 		}
 	},
-	hooks: {
-		beforeValidate: function(page, options) {
-			// var title = this.getDataValue('title');
-			// title = title.toLowerCase().split(' ');
-			// page.urlTitle = title.join('_');
-
-			var newUrlTitle = page.title;
-			console.log(newUrlTitle);
-			//newUrlTitle = newUrlTitle.toLowerCase.split(' '); 
-			//page.urlTitle = newUrlTitle.join("_"); 
-		}
-	}
+	// hooks: {
+	// 	beforeValidate: function(page, options) {
+	// 		page.urlTitle = generateUrl(page.title);
+	// 	}
+	// }
 }
 );
 
@@ -61,6 +54,16 @@ var User = db.define('user', {
 		isEmail: true
 	}
 });
+
+function generateUrl(title) {
+  if (title) {
+    const notWords = /\W/ig;
+    const whitespace = /\s+/g;
+    return title.replace(notWords, '').replace(whitespace, '_');
+  } else {
+    return Math.random().toString(36).substring(2, 7);
+  }
+}
 
 module.exports = {
 	Page: Page,

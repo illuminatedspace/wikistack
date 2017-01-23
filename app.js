@@ -15,15 +15,9 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-models.User.sync({})
-	.then(function() {
-		return models.Page.sync({});
-	})
+models.User.sync({force: true})
   .then(function() {
-    models.Page.sync({});
-  })
-  .then(function() {
-    return models.Page.sync({});
+    return models.Page.sync({force: true});
   })
 	.then(function() {
 		app.listen(3000, function() {
