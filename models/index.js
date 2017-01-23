@@ -12,7 +12,7 @@ var Page = db.define('page', {
 	},
 	urlTitle: {
 		type: Sequelize.STRING,
-		allowNull: false
+		//allowNull: false
 	},
 	content: {
 		type: Sequelize.TEXT,
@@ -29,17 +29,22 @@ var Page = db.define('page', {
 	}
 },
 {
-	getterMethods: {
+	getterMethods: { 
 		route: function() {
 			var urlTitle = this.getDataValue('urlTitle');
 			return '/wiki/' + urlTitle;
 		}
 	},
 	hooks: {
-		beforeValidate: function() {
-			var title = this.getDataValue('title');
-			title = title.toLowerCase().split(' ');
-			page.urlTitle = title.join('_');
+		beforeValidate: function(page, options) {
+			// var title = this.getDataValue('title');
+			// title = title.toLowerCase().split(' ');
+			// page.urlTitle = title.join('_');
+
+			var newUrlTitle = page.title;
+			console.log(newUrlTitle);
+			//newUrlTitle = newUrlTitle.toLowerCase.split(' '); 
+			//page.urlTitle = newUrlTitle.join("_"); 
 		}
 	}
 }

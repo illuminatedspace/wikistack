@@ -5,7 +5,7 @@ const nunjucks = require('nunjucks');
 const bodyParser = require('body-parser');
 const models = require('./models');
 const path = require('path');
-const router = require('./routes/wiki.js');
+const router = require('./routes');
 
 
 app.use(express.static(path.join(__dirname, '/public')));
@@ -38,4 +38,4 @@ nunjucks.configure('views', {noCache: true});
 app.set('view engine', 'html');
 app.engine('html', nunjucks.render);
 
-app.use('/wiki/', router);
+app.use('/', router);
